@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="app-container">
+      <div class="app-header">
+        <div class="app-header-left">
+          <span class="app-icon"></span>
+          <p class="app-name">SUPTI</p>
+          <div class="search-wrapper">
+            <input type="text" class="search-input" placeholder="Search" />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="app-header-right">
+          <button class="mode-switch" title="Switch Theme">
+            <i class="fa-regular fa-moon"></i>
+          </button>
+          <button class="add-btn" title="Add New Projec">
+            <i class="fa-solid fa-circle-plus"></i>
+          </button>
+          <button class="notification-btn">
+            <i class="fa-regular fa-bell"></i>
+          </button>
+        </div>
+      </div>
+      <div class="app-content">
+        <div class="projects-section">
+          <div class="projects-section-header">
+            <p>Projects</p>
+            <p class="time">August, 18</p>
+          </div>
+          <div class="projects-section-line">
+            <div class="projects-status">
+              <div class="item-status">
+                <span class="status-number">15</span>
+                <spn class="status-type">In Progress</spn>
+              </div>
+
+              <div class="item-status">
+                <span class="status-number">5</span>
+                <spn class="status-type">Upcoming</spn>
+              </div>
+
+              <div class="item-status">
+                <span class="status-number">24</span>
+                <spn class="status-type">Total Projects</spn>
+              </div>
+            </div>
+            <div class="view-actions">
+              <button class="view-btn list-view" title="List View">
+                <i class="fa-solid fa-list"></i>
+              </button>
+              <button class="view-btn grid-view active" title="Grid View">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-grid"
+                >
+                  <rect x="3" y="3" width="7" height="7" />
+                  <rect x="14" y="3" width="7" height="7" />
+                  <rect x="14" y="14" width="7" height="7" />
+                  <rect x="3" y="14" width="7" height="7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="project-boxes jsGridView">
+            <div class="project-box-wrapper">
+              <div class="project-box" style="background-color: #fee4cb">
+                <div class="project-box-header">
+                  <span>August 18, 2023</span>
+                  <div class="more-wrapper">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                <div class="project-box-content-header">
+                  <p class="box-content-header">Web Designing</p>
+                  <p class="box-content-subheader">Prototyping</p>
+                </div>
+                <div class="box-progress-wrapper">
+                  <p class="box-progress-header">Progress</p>
+                  <div class="box-progress-bar">
+                    <span
+                      class="box-progress"
+                      style="width: 60%; background-color: #ff942e"
+                    ></span>
+                  </div>
+                  <p class="box-progress-percentage">60%</p>
+                </div>
+                <div class="project-box-footer">
+                  <div class="days-left" style="color: #ff942e">
+                    2 days Left
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-box-wrapper">
+              <div class="project-box" style="background-color: #e9e7fd">
+                <div class="project-box-header">
+                  <span>August 18, 2023</span>
+                  <div class="more-wrapper">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                <div class="project-box-content-header">
+                  <p class="box-content-header">Testing</p>
+                  <p class="box-content-subheader">Prototyping</p>
+                </div>
+                <div class="box-progress-wrapper">
+                  <p class="box-progress-header">Progress</p>
+                  <div class="box-progress-bar">
+                    <span
+                      class="box-progress"
+                      style="width: 50%; background-color: #4f3ff0"
+                    ></span>
+                  </div>
+                  <p class="box-progress-percentage">50%</p>
+                </div>
+                <div class="project-box-footer">
+                  <div class="days-left" style="color: #4f3ff0">
+                    2 Days Left
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-box-wrapper">
+              <div class="project-box">
+                <div class="project-box-header">
+                  <span>August 18, 2023</span>
+                  <div class="more-wrapper">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                <div class="project-box-content-header">
+                  <p class="box-content-header">Svg Animations</p>
+                  <p class="box-content-subheader">Prototyping</p>
+                </div>
+                <div class="box-progress-wrapper">
+                  <p class="box-progress-header">Progress</p>
+                  <div class="box-progress-bar">
+                    <span
+                      class="box-progress"
+                      style="width: 80%; background-color: #096c86"
+                    ></span>
+                  </div>
+                  <p class="box-progress-percentage">80%</p>
+                </div>
+                <div class="project-box-footer">
+                  <div class="days-left" style="color: #096c86">
+                    2 Days Left
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-box-wrapper">
+              <div class="project-box" style="background-color: #ffd3e2">
+                <div class="project-box-header">
+                  <span>August 18, 2023</span>
+                  <div class="more-wrapper">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                <div class="project-box-content-header">
+                  <p class="box-content-header">UI Development</p>
+                  <p class="box-content-subheader">Prototyping</p>
+                </div>
+                <div class="box-progress-wrapper">
+                  <p class="box-progress-header">Progress</p>
+                  <div class="box-progress-bar">
+                    <span
+                      class="box-progress"
+                      style="width: 20%; background-color: #df3670"
+                    ></span>
+                  </div>
+                  <p class="box-progress-percentage">20%</p>
+                </div>
+                <div class="project-box-footer">
+                  <div class="days-left" style="color: #df3670">
+                    2 Days Left
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-box-wrapper">
+              <div class="project-box" style="background-color: #c8f7dc">
+                <div class="project-box-header">
+                  <span>August 18, 2023</span>
+                  <div class="more-wrapper">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                <div class="project-box-content-header">
+                  <p class="box-content-header">Data Analysis</p>
+                  <p class="box-content-subheader">Prototyping</p>
+                </div>
+                <div class="box-progress-wrapper">
+                  <p class="box-progress-header">Progress</p>
+                  <div class="box-progress-bar">
+                    <span
+                      class="box-progress"
+                      style="width: 60%; background-color: #34c471"
+                    ></span>
+                  </div>
+                  <p class="box-progress-percentage">60%</p>
+                </div>
+                <div class="project-box-footer">
+                  <div class="days-left" style="color: #34c471">
+                    2 Days Left
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-box-wrapper">
+              <div class="project-box" style="background-color: #d5deff">
+                <div class="project-box-header">
+                  <span>August 18, 2023</span>
+                  <div class="more-wrapper">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                <div class="project-box-content-header">
+                  <p class="box-content-header">Web Designing</p>
+                  <p class="box-content-subheader">Prototyping</p>
+                </div>
+                <div class="box-progress-wrapper">
+                  <p class="box-progress-header">Progress</p>
+                  <div class="box-progress-bar">
+                    <span
+                      class="box-progress"
+                      style="width: 40%; background-color: #4067f9"
+                    ></span>
+                  </div>
+                  <p class="box-progress-percentage">40%</p>
+                </div>
+                <div class="project-box-footer">
+                  <div class="days-left" style="color: #4067f9">
+                    2 Days Left
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
